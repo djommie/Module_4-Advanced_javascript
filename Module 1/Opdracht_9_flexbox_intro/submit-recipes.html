@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submit Recipes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Submit a recipe</h1>
+    </header>
+
+    <main>
+        <section>
+            <form name="submit-recipe" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Tel: <input type="tel" name="tel" /></label>
+                </p>
+                <p>
+                    <label>Your age: <input type="number" name="age" min="1" max="99" /></label>
+                </p>
+                <p>
+                    <label>Birthday: <input type="date" name="birthday" /> </label>
+                </p>
+                <p>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                </p>
+                <p>
+                <p>favorite quisine</p>
+                <input type="checkbox" id="french" name="favorite" value="french">
+                <label for="french">French</label><br>
+                <input type="checkbox" id="italian" name="favorite" value="italian">
+                <label for="italian">Italian</label><br>
+                <input type="checkbox" id="spanish" name="favorite" value="spanish">
+                <label for="spanish">Spanish</label><br>
+                <input type="checkbox" id="arabic" name="favorite" value="arabic">
+                <label for="arabic">Arabic</label><br>
+                </p>
+                <p>
+                    <label>Bio: <textarea name="bio"></textarea></label>
+                </p>
+                <p>
+                    <label>Favorite color: <input type="color" name="fav-color" /></label>
+                </p>
+                <p>
+                    <label>Upload your recipe: <input type="file" /></label>
+                </p>
+                <p>
+                    <label>Your website: <input type="url" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+
+        </section>
+    </main>
+    <nav>
+        <ul class="navbar">
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="submit-recipes.html">Submit a recipe</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  -ms-grid-rows: (minmax(200px, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px;
+}
+
+.portfolio__item {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1;
+}
+
+.portfolio__container {
+  position: relative;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #045672;
+  border-radius: 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.portfolio__overlay:hover {
+  opacity: 1;
+}
+
+.portfolio__btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 5px 15px 5px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    -ms-grid-columns: (minmax(200px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    -ms-grid-rows: (minmax(200px, 1fr))[auto-fill];
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .portfolio {
+    -ms-grid-columns: (minmax(200px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    -ms-grid-rows: (minmax(200px, 1fr))[auto-fill];
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+/*# sourceMappingURL=style.css.map */

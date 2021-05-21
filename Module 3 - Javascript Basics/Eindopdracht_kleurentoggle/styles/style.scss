@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: lightgray;
+}
+
+.text {
+    position: absolute;
+    font-size: 150%;
+    left: 400px;
+    top: 200px;
+}
+
+.menu {
+    
+
+    &__btn {
+        height: 125px;
+        width: 125px;
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style-type: none;
+        visibility: hidden;
+    }
+
+    &__item {
+        padding: 20px;
+        margin: 3px 0;
+        display: block;
+        width: 300px;
+        cursor: pointer;
+
+        &--home {
+            background-color: lightgray;
+        }
+
+        &--red {
+            background-color: red;
+        }
+        &--orange {
+            background-color: orange;
+        }
+        &--purple {
+            background-color: purple;
+        }
+        &--green {
+            background-color: green;
+        }
+    }
+}

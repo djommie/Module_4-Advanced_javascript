@@ -1,0 +1,15 @@
+
+
+
+header {
+
+    height: 100vh;
+    color:$textColor;
+    background: lightblue;
+    button {
+        background: $primaryBtn;
+        &::after {
+            content: "hello";
+        }
+    }
+}

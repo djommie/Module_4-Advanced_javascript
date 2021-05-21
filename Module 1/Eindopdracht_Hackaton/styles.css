@@ -1,0 +1,242 @@
+body {
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 44px 170px 2.2fr 1.2fr;
+    grid-template-areas:
+      "footer"  
+      "nav"
+      "banner"
+      "main"
+      "adspace";
+    font-weight: 800;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+  
+  nav {
+    background: #ffffff;
+    grid-area: nav;
+  }
+
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navbar > li {
+      float: left;
+  }
+
+  .navbar > li a {
+      display: block;
+      text-align: center;
+      color:rgb(24, 48, 48);
+      padding: 15px 25px;
+      text-decoration: none; 
+   
+  }
+
+  .navbar > li a:hover {
+      background-color: rgb(160, 187, 187);
+  }
+
+  #donate {
+      float: right;
+      background-color: rgb(143, 99, 18);
+
+  }
+
+  #donate a {
+    color: white;
+  }
+  
+  .banner {
+    background-image: url("images/nl-flag.jpg");
+    grid-area: banner;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative
+  }
+
+  .banner-text {
+    position: relative;
+    text-align: left;
+    top:27%;
+    left: 10%;
+    color:black;
+    max-width: 200px;
+  }
+
+  .portret {
+    background-image: url("images/steve-face.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  main {
+    background:rgb(43,34,61);
+    grid-area: main;
+    color:white;
+  }
+
+  main h1{
+      margin: 50px;
+      
+  }
+
+  main p {
+      margin: 20px 50px;
+
+  }
+
+  .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style: none;
+      margin-top: 50px;
+  }
+
+  button {
+      padding: 5px 15px;
+      background-color: rgb(43,34,61);
+      border: 1px solid white;
+      color: white;
+      border-radius: 5px;
+  }
+
+  .donate-button {
+      font-size: 22px;
+      padding: 8px 22px;
+      background-color: rgb(143, 99, 18);
+      margin: 40px;
+      border: 1px solid black;
+      color: white;
+  }
+
+  button:hover {
+    background-color: rgb(160, 187, 187);
+  }
+
+  .adspace {
+    background: rgb(43,34,61);
+    color: white;
+    grid-area: adspace;
+  }
+
+  .adspace iframe{
+      margin-top: 5px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+  }
+
+  .news-form {
+      padding: 20px
+  }
+
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type=checkbox] {
+    margin: 16px;
+  }
+  
+  input[type="file"] {
+    display: none;
+}
+
+input[type=submit] {
+  background-color: rgb(143, 99, 18);
+  color: #ffffff;
+  border-color: black;
+}
+
+.file-upload {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 6px 0px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  body {
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 25px 44px 170px 2.2fr;
+  grid-template-areas:
+    "footer footer"  
+    "nav nav"
+    "banner adspace"
+    "main adspace";
+  }
+
+  button {
+    padding: 5px 15px;
+    font-size: 24px;
+    margin: 40px;
+  }
+
+  .donate-button {
+    font-size: 30px;
+    padding: 8px 22px;
+    margin: 40px;
+  }
+
+  main {
+    padding: 60px 20%;
+  }
+
+  .adspace > iframe {
+    margin-top: 50px; 
+  }
+
+  .adspace {
+    padding-top: 50px;
+    border-left: solid white 1px;
+  }
+}  
+
+/* 
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 25px 44px 170px 2.2fr;
+    grid-template-areas:
+      "footer footer"  
+      "nav nav"
+      "banner adspace"
+      "main adspace";
+    }
+  }

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+.social {
+  height: 50px;
+  width: 55px;
+  color: white;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social__icon {
+  width: 55px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.social__text {
+  font-family: arial;
+  position: relative;
+  top: -50px;
+  color: white;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.social--blog {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  background: #e17b77;
+}
+
+.social--twitter {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  background-color: #00aced;
+}
+
+.social--linkedin {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  background-color: #3b5998;
+}
+
+.social--facebook {
+  position: absolute;
+  top: 550px;
+  right: 0;
+  background-color: #007bb6;
+}
+
+.social--github {
+  position: absolute;
+  top: 600px;
+  right: 0;
+  background-color: #333;
+}
+
+.social:hover {
+  width: 300px;
+}
+
+.social:hover .social__text {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

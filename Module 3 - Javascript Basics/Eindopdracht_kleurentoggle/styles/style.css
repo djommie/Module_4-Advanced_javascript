@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.text {
+  position: absolute;
+  font-size: 150%;
+  left: 400px;
+  top: 200px;
+}
+
+.menu__btn {
+  height: 125px;
+  width: 125px;
+  cursor: pointer;
+}
+
+.menu__list {
+  list-style-type: none;
+  visibility: hidden;
+}
+
+.menu__item {
+  padding: 20px;
+  margin: 3px 0;
+  display: block;
+  width: 300px;
+  cursor: pointer;
+}
+
+.menu__item--home {
+  background-color: lightgray;
+}
+
+.menu__item--red {
+  background-color: red;
+}
+
+.menu__item--orange {
+  background-color: orange;
+}
+
+.menu__item--purple {
+  background-color: purple;
+}
+
+.menu__item--green {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

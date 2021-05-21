@@ -1,0 +1,104 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+body {
+    width: 700px;
+    padding: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin:0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    padding :0;
+    margin: 5px;
+    border: solid rgb(212, 210, 210) 2px;
+    border-radius: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.9fr;
+    grid-template-areas: 
+        "info"
+        "request"
+        "btn"
+}
+
+.info {
+    display: grid;
+    margin: 12px 0px 12px 12px;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name avatar"
+    "status avatar";
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+img {
+    margin:auto;
+    display: block;
+    width: 75%;
+    height: 75%;
+}
+
+.name {
+    grid-area: name;
+    font-size:130%;
+}
+
+.status {
+    grid-area: status;
+    color: darkgrey;
+    margin-top: 4px;
+
+}
+
+.request {
+    grid-area: request;
+    margin: 0px 12px 0px 12px;
+    line-height: 1.3;
+    color: grey;
+}
+
+.btn-container {
+
+    display: flex;
+    justify-content: center;
+    grid-area: btn;
+    border-top: solid rgb(212, 210, 210) 1px;
+    padding: 10px;
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.approve {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid mediumseagreen 1.5px;
+    border-right: 0;
+    color: mediumseagreen;
+}
+
+.decline {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid red 1.5px;
+    color: red;
+}

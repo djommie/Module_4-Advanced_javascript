@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+
+.social {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+}
+
+.social__icon {
+  width: 70px;
+  height: 60px;
+}
+
+.social__text {
+  color: white;
+  opacity: 0.5;
+}
+
+.social__slide {
+  width: 70px;
+  height: 60px;
+}
+
+.social--blog {
+  background: #e17b77;
+}
+
+.social--twitter {
+  background-color: #00aced;
+}
+
+.social--link {
+  background-color: #007bb6;
+}
+
+.social--fb {
+  background-color: #3b5998;
+}
+
+.social--git {
+  background-color: #333;
+}
+
+.social__slide:hover {
+  width: 370px;
+}
+
+.social__slide:hover .social__text {
+  opacity: 1;
+  color: chartreuse;
+}
+/*# sourceMappingURL=style.css.map */
