@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Winc Movie Stuff</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script defer type="text/javascript" src="scripts/script.js"></script>
+    <script defer type="text/javascript" src="scripts/data.js"></script>
+</head>
+
+
+
+<body onload="addMoviesToDom(movies), addEventListeners()">
+    <h1>Welkom bij de Winc Filmzoeker</h1>
+    <nav class="nav">
+        <div class="nav__radio">
+            <input type="radio" id="latest" name="filter" value="latest">
+            <label for="latest">Laaste films, 2014 of nieuwer</label>
+        </div>
+        <div class="nav__radio">
+            <input type="radio" id="avenger" name="filter" value="avenger">
+            <label for="avenger">Avenger Films</label>
+        </div>
+        <div class="nav__radio">
+            <input type="radio" id="x-men" name="filter" value="x-men">
+            <label for="x-men">X-Men Films</label>
+        </div>
+        <div class="nav__radio">
+            <input type="radio" id="princess" name="filter" value="princess">
+            <label for="princess">Princess Films</label>
+        </div>
+        <div class="nav__radio">
+            <input type="radio" id="batman" name="filter" value="batman">
+            <label for="batman">Batman Films</label>
+        </div>
+    </nav>
+    <main class="films">
+        <ul id="films__list">
+        </ul>
+    </main>
+</body>
+
+</html>
